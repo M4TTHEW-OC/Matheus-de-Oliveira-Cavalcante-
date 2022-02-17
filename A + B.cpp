@@ -1,4 +1,4 @@
-/*Leia dois valores inteiros, neste caso, as vari·veis ??A e B. ApÛs isso, calcule a soma entre eles e atribua-a ‡ vari·vel SOMA . Escreva o valor desta vari·vel.*/
+/*Leia dois valores inteiros, neste caso, as vari√°veis ??A e B. Ap√≥s isso, calcule a soma entre eles e atribua-a √† vari√°vel SOMA . Escreva o valor desta vari√°vel.*/
  #include <stdio.h>
 int main(){
 	
@@ -11,7 +11,7 @@ int main(){
 	
 	resultado = a + b; 
 	
-	printf("SOMA = %d", &resultado);
+	printf("SOMA = %d", resultado);
 	
 	
 	
