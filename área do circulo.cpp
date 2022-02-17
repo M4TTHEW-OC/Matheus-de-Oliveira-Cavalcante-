@@ -1,10 +1,10 @@
-/*A formula para calcular a Àrea da circunferenciae e definada por A = n .  */
+/*A formula para calcular a Ã€rea da circunferenciae e definada por A = n .  */
 
 
 #include <stdio.h>
-#include <math.h>// biblioteca matématica 
+#include <math.h>// biblioteca matemÃ¡tica 
 
-#define  PI 3.1 // definição de uma constante 
+#define  PI 3.1 // definiÃ§Ã£o de uma constante 
 int main(){
 
 double r, resultado;
