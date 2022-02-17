@@ -1,26 +1,25 @@
-/* Leia 2 valores inteiros e armaze-os nas vari·veis A e B.
-Efetue a soma de A e B atribuido o seu resultado na vari·vel X.
+Efetue a soma de A e B atribuido o seu resultado na vari√°vel X.
 Imprima X conforme exemplo apresentado abaixo. 
 soma +
-diminuiÁ„o -
-divis„o / 
-multiplicaÁ„o *
-comando de atribuiÁ„o = 
+diminui√ß√£o -
+divis√£o / 
+multiplica√ß√£o *
+comando de atribui√ß√£o = 
 */
 #include <stdio.h>
 int main(){
 
   int a, b, x;
 
-  printf("Usuario, seu lindo! Digite o primeiro numero: ");
+  printf("Usuario, seu lindo! Digite o primeiro numero: ");                
   scanf("%d", &a); 
   printf("Usuario, seu lindo! Digite o segundo numero: ");
   scanf("%d", &b);
 
-  x = a + b; //comando de atribiÁ„o = ; operador matematico + 
+  x = a + b; //comando de atribi√ß√£o = ; operador matematico + 
   printf("X = %d\n", x); 
-  printf("X = %d\n", &x); //impress„o do endereÁo de memoria em decimal 
-  printf("X = %x\n", &x); //impress„o do endereÁo de memoria em hexa
+  printf("X = %d\n", x); //impress√£o do endere√ßo de memoria em decimal 
+  printf("X = %x\n", x); //impress√£o do endere√ßo de memoria em hexa
   
 }
 
