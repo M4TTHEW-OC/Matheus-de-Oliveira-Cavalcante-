@@ -20,6 +20,7 @@ int main(){
 
 
     
+/*    
 ----------------
 - E/S
 - Variáveis/consT                     C} ------ Conceito --- VS.{ [Tecnologia] 
@@ -28,9 +29,15 @@ int main(){
 - Repetição                           JS}
 - Vetores                             [C#]}
                                       Python}
-                                      Ruby} 
+                                      Ruby}                                      
 ----------------
-- [Modularização
-- String 
+- [Modularização                      Elixir (Ljq)
+- String                              Erland
 - Structs
-- [File System]]
+- [File System]] */ 
+
+
+// (FOMO) -> “fear of missing out”
+
+
+
