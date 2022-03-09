@@ -17,3 +17,20 @@ int main(){
 	
 	
 }
+
+
+    
+----------------
+- E/S
+- Variáveis/consT                     C} ------ Conceito --- VS.{ [Tecnologia] 
+- Operadores                          {[+10%]-[JAVA]}           {  Ferramenta[s]
+- Decisão                             {[-10%]-[PHP]}  Likec
+- Repetição                           JS}
+- Vetores                             [C#]}
+                                      Python}
+                                      Ruby} 
+----------------
+- [Modularização
+- String 
+- Structs
+- [File System]]
