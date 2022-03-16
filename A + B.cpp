@@ -39,5 +39,30 @@ int main(){
 
 // (FOMO) -> “fear of missing out”
 
+/*
+1. Vetores e Matrizes                                            linguagem c de aluno - Youtube
+2. Funções - modularização                                       replit.com
+3. Registros (estruturas).                                       
+4. String e processamento de strings 
+5. Ponteiros                                                     Variálvel: 
+6. Representação dos dados na memória: Alocação 
+estática e Dinâmica.
+7. Manipulação de dados em Arquivos Sequenciais
+(texto e binário). 
+
+
+      ---------- stdio ---------------
+      |                              |
+  scanf ->  |      *        | ->   Printf
+  entrada - |    [   ]    - | saída 
+            | Processamento |       idade                int = idade= Ø;
+            |    |   ^      |        [||][][][][][]       float = altura;
+            |    v   |      |                              |
+            |               |                              v
+            |   [ B D ]     |                            altura = 1.78;
+                                                         double = altura;
+                                                         altura = 1.78;
+*/ 
+
 
 
