@@ -62,6 +62,8 @@ estática e Dinâmica.
             |   [ B D ]     |                            altura = 1.78;
                                                          double = altura;
                                                          altura = 1.78;
+fausto martini
+Kris costa 3d cafe fx
 */ 
 
 
