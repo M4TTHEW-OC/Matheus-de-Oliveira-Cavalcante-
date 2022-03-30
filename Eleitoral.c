@@ -12,7 +12,7 @@ int main() {
 	scanf ("%d",&idade);
 	
     if (idade<1){
-        printf ("não nasceu\n");
+        printf ("nÃ£o nasceu\n");
         }else{ 
           
         if(idade <16){
@@ -35,7 +35,7 @@ int main() {
 					}else{
 						 printf("Opicional\n");
                    }
-			   }
+	           }
            }
        }
    }     
