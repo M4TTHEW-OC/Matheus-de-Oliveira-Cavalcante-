@@ -3,33 +3,33 @@
 
 
 int main() {
-	int primeiro, inverso, numero;
+	int coluna1, coluna2, numero;
 	
 	printf("Digite um numero (1-500):");
 	scanf("%d", &numero);
-	inverso = numero;
+	coluna2 = numero;
 	
-	for(primeiro = 1; primeiro <numero + 1; primeiro++){
-		if(primeiro % 4 == 0 && primeiro % 5 == 0){
+	for(coluna1 = 1; coluna1 <numero + 1; coluna1++){
+		if(coluna1 % 4 == 0 && coluna1 % 5 == 0){
 			
 			printf("Bingo  ");
-		}else if(primeiro % 5 == 0){
+		}else if(coluna1 % 5 == 0){
 			printf("M5  ");
-	    }else if(primeiro % 4 == 0){
+	    }else if(coluna1 % 4 == 0){
 	    	printf("M4  ");
 	    }else{
-	    	printf("%i  ", primeiro);
+	    	printf("%i  ", coluna1);
 		}
-		if(inverso % 4 == 0 && inverso % 5 == 0){
+		if(coluna2 % 4 == 0 && coluna2 % 5 == 0){
 			printf("Bingo\n");
-		}else if(inverso % 5 == 0){
+		}else if(coluna2 % 5 == 0){
 			printf("M5\n");
-	    }else if(inverso % 4 == 0){
+	    }else if(coluna2 % 4 == 0){
 	    	printf("M4\n");
 	    }else{
-	    	printf("%i\n", inverso);
+	    	printf("%i\n", coluna2);
         }
-        inverso = inverso -1;
+        coluna2 = coluna2 -1;
 }
 	
 	
