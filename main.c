@@ -1,203 +1,51 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
-
+ 
+// 2 - prototipaÁ„o
+int em_uma_decada(int minha_idade);
+ 
 int main() {
-	int opcao, i;
-for(i=0; i <4; i++){
-printf("Selecione uma das opcoes a seguir: \n1. Soma n2. multiplacacao n3. divisao  n4. subtracao :");
-scanf("%d", &opcao);
-
-	switch(opcao){
-		case '1':
-			double soma1, soma2;
-			printf("Selecione seu primeiro numero: ");
-			scanf("%lf", &soma1);
-			printf("Selecione seu segundo numero: ");
-			scanf("%lf", &soma2);
-			printf("Seu resultado foi: %.2lf\n", soma1 + soma2);
-			break;
-		case '2':
-			double mult1, mult2;
-			printf("Selecione seu primeiro numero: ");
-			scanf("%lf", &mult1);
-			printf("Selecione seu segundo numero: ");
-			scanf("%lf", &mult2);
-			printf("Seu resultado foi: %.2lf\n", mult1 * mult2);
-			break;
-		case '3':
-			double div1, div2;
-			printf("Digite o seu primeiro numero: ");
-			scanf("%lf", &div1);
-			printf("Digite o seu segundo numero: ");
-			scanf("%lf", &div2);
-			printf("Sua divisao √© %lf\n", div1 / div2 );
-			break;
-		case '4':
-			double sub1, sub2;
-			printf("Selecione seu primeiro numero: ");
-			scanf("%lf", &sub1);
-			printf("Selecione seu segundo numero: ");
-			scanf("%lf", &sub2);
-			printf("Seu resultado foi: %.2lf\n", sub1 - sub2);
-			break;
-		default: printf("Numero Invalido\n");
-	}	
+	int idade = 0, idade_mais_10 = 0;
+	printf("Informe a idade: ");
+	scanf("%d",&idade);
+ 
+// 3 - chamada da funÁ„o
+	idade_mais_10 = em_uma_decada(idade);
+	printf("%d\n",em_uma_decada(idade));
+	printf("%d\n",idade_mais_10);
+	printf("Valores acima em uma decada com base na idade informada: %d\n",idade);
+ 
+	return 0;
 }
+ 
+ 
+// 1 - declaraÁ„o
+int em_uma_decada(int minha_idade){
+	//printf("@ idade informada: %d\n",minha_idade);
+	return minha_idade + 10;	
+}
+
 	
-	
-	return 0;
-}
+	                        
+/* 	
+         _____
+		|    |
+		|    V
+     notas [10][20][30] X
+		   [0] [1] [2]
 
-/*
-#include <stdio.h>
- 
- 
-void head(); // 2 - prot√≥tipo do procedimento
-float soma(float n1, float num2); // 2 - prot√≥tipo da fun√ß√£o
-char le_valida_operador();
- 
-int main() {
- 
-	float n1,n2,result;
-	char op;
- 
-	head(); // 3 - chamada do procedimento
- 
-	printf("N1: ");
-	scanf("%f",&n1);
- 
-	printf("OP:");
-	op = le_valida_operador();
- 
-	printf("N2: ");
-	scanf("%f",&n2);
- 
-	printf("---------------\n");
- 
-	switch(op){
-		case '+':
-			result = soma(n1,n2);
-			printf("RESULTADO:   %.1f\n",result); // 3 - chamada da fun√ß√£o soma()
-		break;
-		case '-':
-			printf("RESULTADO:   %.1f\n",n1-n2);
-		break;
-		case '*':
-			printf("RESULTADO:   %.1f\n",n1*n2);
-		break;
-		case '/':
-			printf("RESULTADO:   %.1f\n",n1/n2);
-		break;						
- 
-		default:
-			printf("OPERADOR INVALIDO");
- 
-	}
- 
-	return 0;
-}
- 
-// 1 - declara√ß√£o do procedimento
-void head(){
-	printf("---------------\n");
-	printf("CALC\n");
-	printf("---------------\n");	
-}
- 
-// 1 - declara√ß√£o da fun√ß√£o
-float soma(float n1, float num2){
-	float resultado;
-	resultado = n1 + num2;
-	return resultado;
-}
- 
- 
-char le_valida_operador(){
-	char operador;
-	int cont=0;
-	do{
-		if(cont!=0){
-			printf("-------\nERRO\n-------\n");
-		}
-		scanf(" %c",&operador);	
-		cont++;
-	}while(operador!='+' && operador!='-' && operador!='*' && operador!='/');	
- 
-	return operador;
-}
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-// https://pastebin.com/akbWN6si
-/*
-#include <stdio.h>
- 
-int main() {
- 
-	float n1,n2;
-	char op;
- 
-	printf("---------------\n");
-	printf("CALC\n");
-	printf("---------------\n");
- 
-	printf("N1: ");
-	scanf("%f",&n1);
- 
-	printf("OP:");
-	scanf(" %c",&op); 
- 
-	printf("N2: ");
-	scanf("%f",&n2);
- 
- 
-	printf("---------------\n");
- 
- 
- 
-	switch(op){
-		case '+':
-			printf("RESULTADO:   %.1f\n",n1+n2);
-		break;
-		case '-':
-			printf("RESULTADO:   %.1f\n",n1-n2);
-		break;
-		case '*':
-			printf("RESULTADO:   %.1f\n",n1*n2);
-		break;
-		case '/':
-			printf("RESULTADO:   %.1f\n",n1/n2);
-		break;						
- 
-		default:
-			printf("OPERADOR INVALIDO");
- 
-	}
- 
-	return 0;
-}
+   [Jit] -->								    ModularizaÁ„o							idade_mais_10 | idade: |  m.idade
+   -----             ____________				subprogamas									   ÿ	  |   ÿ	   |     ÿ
+	a = 10;		    |    _____  |															 		  |  17	   |    17
+	b = 20;		    |	|	 |  |				funÁıes: return.
+	c = [*b;]	   [0]  V	 | [3]			procedimentos: n„o tem retorno "void".
+				  [10][20] [x] [8]			
+	________	   a   b   c    d				3 momentos:
+	b = 30        2040 2041 2042 2043				declaraÁ„o
+	               |			   |				protÛtipo
+|[int] notas[10];|  ---------------				chamada
+--------------	        |
+	            		v
+	            		8c
+	            	10  30  30
 */
+	            	
